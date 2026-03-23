@@ -1199,7 +1199,7 @@ footer{
     <p class="contact-sub">Patrocínio, merchandising, testemunhal ou eventos — Marcos Maracanã é a voz que conecta sua marca a Minas Gerais e ao Brasil.</p>
     <div class="c-items">
       <div class="c-item"><div class="c-icon">📸</div><div><div class="c-lbl">Instagram</div><div class="c-val">@marcosmaracana</div></div></div>
-      <div class="c-item"><div class="c-icon">✉️</div><div><div class="c-lbl">E-mail</div><div class="c-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6e04010f0118071a011c0a1b0f1c1a0b5d5e5e2e09030f0702400d0103">[email&#160;protected]</a></div></div></div>
+      <div class="c-item"><div class="c-icon">✉️</div><div><div class="c-lbl">E-mail</div><div class="c-val" id="email-val"></div></div></div>
       <div class="c-item"><div class="c-icon">📱</div><div><div class="c-lbl">WhatsApp / Telefone</div><div class="c-val">(34) 99339-1317</div></div></div>
       <div class="c-item"><div class="c-icon">👤</div><div><div class="c-lbl">Facebook</div><div class="c-val">MarcosMaracanã</div></div></div>
     </div>
@@ -1212,8 +1212,26 @@ footer{
   <div class="f-copy">© 2026 — Mídia Kit Oficial · TV Band Minas · Rádio Itatiaia · Band Nacional</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const reveals = document.querySelectorAll('.reveal');
 // Adicionar animate class via JS para ativar animações
 reveals.forEach(el=>el.classList.add('animate'));
 const obs = new IntersectionObserver(entries=>{
+
+<script>
+(function(){
+  var parts=['joao','vitor','duarte','300'];
+  var domain='gmail'+'.'+'com';
+  var email=parts.join('')+'@'+domain;
+  var el=document.getElementById('email-val');
+  if(el){
+    var a=document.createElement('a');
+    a.setAttribute('href','mai'+'lto:'+email);
+    a.style.cssText='color:var(--white);text-decoration:none';
+    a.textContent=email;
+    el.appendChild(a);
+  }
+})();
+</script>
+</body>
+</html>
